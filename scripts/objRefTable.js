@@ -18,7 +18,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.IsFalling,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.Touch.Cnds.OnHoldGestureObject,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Behaviors.solid.Acts.SetEnabled,
