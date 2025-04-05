@@ -1261,7 +1261,6 @@ self.C3_ExpressionFuncs = [
 		() => 0,
 		() => "analista-infectado",
 		() => "congelar",
-		() => 1,
 		() => "descongelar"
 ];
 
