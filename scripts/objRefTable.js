@@ -11,24 +11,25 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse,
 		C3.Plugins.Button,
 		C3.Behaviors.Timer,
+		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.System.Cnds.CompareBoolVar,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Behaviors.Platform.Cnds.IsJumping,
 		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Behaviors.Platform.Cnds.IsFalling,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
-		C3.Plugins.Touch.Cnds.OnHoldGestureObject,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Behaviors.solid.Acts.SetEnabled,
 		C3.Plugins.Sprite.Acts.MoveForward,
-		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Behaviors.Timer.Acts.StartTimer,
-		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Behaviors.Timer.Cnds.OnTimer,
 		C3.Behaviors.Platform.Acts.SetIgnoreInput,
 		C3.Plugins.System.Cnds.OnLayoutStart
@@ -74,8 +75,11 @@ self.C3_JsPropNameTable = [
 	{Sprite22: 0},
 	{Sprite23: 0},
 	{escudo: 0},
+	{Áudio: 0},
 	{poderEscudo: 0},
-	{poderCongelar: 0}
+	{poderCongelar: 0},
+	{analistajump: 0},
+	{hackerjump: 0}
 ];
 
 self.InstanceType = {
@@ -112,5 +116,6 @@ self.InstanceType = {
 	Sprite21: class extends self.ISpriteInstance {},
 	Sprite22: class extends self.ISpriteInstance {},
 	Sprite23: class extends self.ISpriteInstance {},
-	escudo: class extends self.ISpriteInstance {}
+	escudo: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {}
 }
